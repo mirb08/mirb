@@ -9,7 +9,7 @@ class CObject {
 	/**
 	 * Members
 	 */
-	protected $ly;
+	protected $mi;
 	protected $config;
 	protected $request;
 	protected $data;

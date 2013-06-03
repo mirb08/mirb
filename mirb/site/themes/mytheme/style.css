@@ -3,9 +3,12 @@
  */
 @import url(../../../themes/grid/style.css);
 
-html{background-color:#FFE2B3;}
-body{background-color:#D0DCE1;}
-#outer-wrap-header{background-color:#FFE2B3;border-bottom:2px solid #FFCE80}
-#outer-wrap-footer{background-color:#FFE2B3}
-a{color:#436370}
-#navbar ul.menu li a.selected{background-color:#D0DCE1;border-bottom:none;}
+html{background-color:#A0DD9D;}
+body{background-color:#E6E6E6;
+font: 1em /*Verdana, Arial, Helvetica,*/ Lucida Console, Monospace/*Sans Serif*/;}
+#outer-wrap-header{background-color:#E5FFE7;border-bottom:2px solid #87F881}
+#outer-wrap-footer{background-color:#A0DD9D}
+a{color:#1D3F28}
+#navbar ul.menu li a.selected{background-color:#E6E6E6;border-bottom:none;}
+
+

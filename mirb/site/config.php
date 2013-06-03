@@ -118,6 +118,9 @@ $mi->config['routing'] = array(
  * Define menus.
  *
  * Create hardcoded menus and map them to a theme region through $mi->config['theme'].
+ * you have two hardcoded versions, you can change which one you want in 'menu_to_region' => array('my-navbar'=>'navbar'), 
+ * further down in the code. You can create your own menu by add or delete in the default menus. 
+ * You can display your own page See the mark below.
  */
 $mi->config['menus'] = array(
   'navbar' => array(
@@ -131,6 +134,7 @@ $mi->config['menus'] = array(
     'home'      => array('label'=>'About Me', 'url'=>'my'),
     'blog'      => array('label'=>'My Blog', 'url'=>'my/blog'),
     'guestbook' => array('label'=>'Guestbook', 'url'=>'my/guestbook'),
+    /*'page' => array('label'=>'page', 'url'=>'page/view/9'), */    /*Here you have our own page*/ 
   ),
 );
 
@@ -161,7 +165,6 @@ $mi->config['menus'] = array(
  */
 $mi->config['theme'] = array(
   'path'            => 'site/themes/mytheme',
-  //'path'            => 'themes/grid',
   'parent'          => 'themes/grid',
   'stylesheet'      => 'style.css',
   'template_file'   => 'index.tpl.php',
@@ -170,7 +173,7 @@ $mi->config['theme'] = array(
     'footer-column-one','footer-column-two','footer-column-three','footer-column-four',
     'footer',
   ),
-  'menu_to_region' => array('my-navbar'=>'navbar'),
+  'menu_to_region' => array('my-navbar'=>'navbar'),  
   'data' => array(
     'header' => 'mirb',
     'slogan' => 'PHP-baserat MVC-inspirerat CMF',
@@ -178,7 +181,7 @@ $mi->config['theme'] = array(
     'logo' => 'logo_80x80.png',
     'logo_width'  => 80,
     'logo_height' => 80,
-    'footer' => '<p>Mirb &copy; by Mikael Olá (mirb08@student.bth.se)</p>',
+    'footer' => '<p>mirb &copy; by Mikael Olá (mirb08@student.bth.se)</p>',
   ),
 );
 
